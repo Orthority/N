@@ -1,5 +1,5 @@
 .content {
-    margin-top: 200px;
+    margin-top: 300px;
 }
 .header {
     padding: 10px;
@@ -21,7 +21,7 @@
     color: #fff;
 }
 .quiz-body {
-    margin-top: 15px;
+    margin-top: 40px;
     padding-bottom: 50px;
 }
 .option-block-container {

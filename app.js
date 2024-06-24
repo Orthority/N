@@ -398,12 +398,13 @@ var quizApp = function () {
     }
 
     this.startTimer = function () {
-        var self = this;
+           var self = this;
         var timerInterval = setInterval(function () {
             self.timer--;
-            var minutes = Math.floor(self.timer / 60);
+			var hours = Math.floor(self.timer / 3600); 
+            var minutes = Math.floor((self.timer % 3600) / 60);
             var seconds = self.timer % 60;
-            $("#timer").text(minutes + ":" + (seconds < 10 ? '0' : '') + seconds);
+            $("#timer").text(hours + ":" + (minutes < 10 ? '0' : '') + minutes + ":" + (seconds < 10 ? '0' : '') + seconds);
 
             if (self.timer <= 0) {
                 clearInterval(timerInterval);

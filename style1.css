@@ -1,6 +1,12 @@
 .content {
     margin-top: 70px;
 }
+
+
+.ff {
+    font-size: 15px;
+}
+
 .header {
     padding: 10px;
     position: fixed;
